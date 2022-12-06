@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#blue-button{
+  background-color: #5C5CDF;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: none;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root.Mui-disabled{
+    background-color: #cccccc !important;
+  color: #000 !important;
+}
+
+.title-text{
+  margin: 0;
+}
+
+.subtitle-text{
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input{
+  font-size: 28px !important;
+  font-weight: lighter !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+.css-i4bv87-MuiSvgIcon-root{
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  z-index: 3423432;
+  transition: all .2s ease-in-out;
+}
+
+.css-i4bv87-MuiSvgIcon-root:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 330ms ease-in-out;
+}

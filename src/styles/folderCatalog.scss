@@ -1,0 +1,10 @@
+.folder-catalog-container{
+    width: 70%;
+    margin: 0 auto;
+
+    .folders{
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,26 @@
+.dialog-container {
+    display: flex;
+    height: 280px;
+
+    .left-side{
+        background-color: #E8E8E8;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .triangle{
+            width: 80%;
+            height: 80%;
+            background-color: #8FCED7;
+        }
+    }
+
+    .right-side{
+        width: 500px;
+    }
+
+    .icon-button{
+        position: relative;
+    }
+}

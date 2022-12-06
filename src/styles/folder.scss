@@ -1,0 +1,76 @@
+.folder-container{
+    width: 300px; 
+    border-radius: 10px !important;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    background-color: #fff !important;
+
+    .top-section{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #5BABB6;
+
+        .buttons{
+            margin: 20px;
+            width: 60px;
+            visibility: visible;
+            opacity: 1;
+            transition: .6s ease-in-out;
+
+            .check-button{
+                background-color: #fff !important;
+                top: 0px;
+                border-radius: 30%;
+                background-color: #fff;
+                width: 30px;
+                height: 30px;
+            }
+
+            .more-button{
+                min-width: 0;
+                padding: 0;
+            }
+
+            .more-icon{
+                width: 30px;
+                height: 30px;
+                top: 0px;
+                border-radius: 50%;
+                background-color: #fff;
+                color: #000;
+            }
+        }
+        
+        .centre-block{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            height: 80%;
+            width: 100%;
+        }
+    }
+
+    .bottom-section{
+        padding: 20px;
+        .folder-title{
+            font-weight: 700;
+        }
+    }
+}
+
+.css-i4bv87-MuiSvgIcon-root{
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+}
+
+.css-j204z7-MuiFormControlLabel-root{
+    margin: 0 !important;
+}
+
+.css-i4bv87-MuiSvgIcon-root{
+    z-index: 1;
+}
+
