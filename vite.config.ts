@@ -4,4 +4,5 @@ import type { UserConfig as VitestUserConfigInterface } from "vite";
 
 export default defineConfig({
   plugins: [react()],
+  base: "/folder/",
 });
