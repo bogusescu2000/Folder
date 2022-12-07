@@ -56,7 +56,14 @@
     }
 
     .bottom-section{
+        display: flex;
+        align-items: center;
         padding: 20px;
+        height: 40px;
+
+        p{
+            font-size: 18px;
+        }
 
         .folder-title{
             font-weight: 700;
