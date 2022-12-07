@@ -55,6 +55,7 @@ export const Folder = ({
       <Box className="top-section">
         <Box className="buttons">
           <FormControlLabel
+            className="checkbox-label"
             label=""
             control={
               <Checkbox

@@ -18,6 +18,11 @@
             opacity: 1;
             transition: .6s ease-in-out;
 
+            .checkbox-label{
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+
             .check-button{
                 background-color: #fff !important;
                 border-radius: 30%;
