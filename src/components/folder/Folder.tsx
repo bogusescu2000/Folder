@@ -58,7 +58,7 @@ export const Folder = ({
             label=""
             control={
               <Checkbox
-                className="check-button"
+                className="check-button icon-button"
                 checked={isChecked}
                 onChange={(_, checked) =>
                   onSelectFolder(dispatch, { id, checked })
@@ -85,7 +85,7 @@ export const Folder = ({
               onClick={handleClick}
               sx={{ display: isChecked ? "none" : "" }}
             >
-              <MoreHorizOutlinedIcon className="more-icon" />
+              <MoreHorizOutlinedIcon className="more-icon icon-button" />
             </Button>
           </Box>
           <Menu

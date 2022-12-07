@@ -20,9 +20,7 @@
 
             .check-button{
                 background-color: #fff !important;
-                top: 0px;
                 border-radius: 30%;
-                background-color: #fff;
                 width: 30px;
                 height: 30px;
             }
@@ -54,23 +52,16 @@
 
     .bottom-section{
         padding: 20px;
+
         .folder-title{
             font-weight: 700;
         }
     }
 }
 
-.css-i4bv87-MuiSvgIcon-root{
+.icon-button{
+    z-index: 1;
     position: relative !important;
     top: 0 !important;
     right: 0 !important;
 }
-
-.css-j204z7-MuiFormControlLabel-root{
-    margin: 0 !important;
-}
-
-.css-i4bv87-MuiSvgIcon-root{
-    z-index: 1;
-}
-

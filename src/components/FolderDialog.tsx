@@ -40,14 +40,12 @@ export const FolderDialog = ({
   return (
     <div>
       <Dialog open={open} onClose={onResetClose}>
-        <Box className="close-button">
-          <CloseIcon onClick={onResetClose} className="icon-button" />
-        </Box>
         <DialogTitle sx={{ fontWeight: "600", paddingBottom: "0px" }}>
           Create a new folder
         </DialogTitle>
         <DialogContent>
           <TextField
+            className="foldername-input"
             autoFocus
             margin="dense"
             id="name"
@@ -57,7 +55,7 @@ export const FolderDialog = ({
             value={value}
           />
         </DialogContent>
-        <DialogActions sx={{ padding: "20px 24px" }}>
+        <DialogActions sx={{ padding: "0px 24px 24px 24px" }}>
           <FolderButton
             backColor="white"
             textColor="black"

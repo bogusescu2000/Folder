@@ -18,9 +18,9 @@ body {
   border-radius: 20px;
 }
 
-.css-sghohy-MuiButtonBase-root-MuiButton-root.Mui-disabled{
+#blue-button:disabled{
     background-color: #cccccc !important;
-  color: #000 !important;
+    color: #000 !important;
 }
 
 .title-text{
@@ -32,23 +32,26 @@ body {
   font-size: 18px;
 }
 
-.css-1x51dt5-MuiInputBase-input-MuiInput-input{
-  font-size: 28px !important;
+.foldername-input{
+  width: 350px !important;
+  height: 60px;
+}
+
+#name{
+  font-size: 20px;
   font-weight: lighter !important;
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
-.css-i4bv87-MuiSvgIcon-root{
+.icon-button{
   float: right;
   position: absolute;
-  top: 5px;
-  right: 5px;
   border-radius: 50%;
   z-index: 3423432;
   transition: all .2s ease-in-out;
 }
 
-.css-i4bv87-MuiSvgIcon-root:hover{
+.icon-button:hover  {
   cursor: pointer;
   transform: scale(1.2);
   transition: transform 330ms ease-in-out;

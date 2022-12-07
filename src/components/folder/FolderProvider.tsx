@@ -1,4 +1,4 @@
-import React, { ReactNode, useContext, useEffect, useState } from "react";
+import React, { ReactNode, useContext, useEffect } from "react";
 import { createContext, useReducer } from "react";
 import { v4 as uuid } from "uuid";
 import getRandomColor from "../../utils/getRandomColor";
@@ -15,8 +15,6 @@ const folderInitialState: FolderState = {
       : JSON.parse(localStorage.getItem("folders")!),
 };
 
-console.log("Initialfolders", folderInitialState.folders.length);
-
 export enum ActionType {
   ADD = "ADD_FOLDER",
   REMOVE = "REMOVE",
@@ -24,9 +22,6 @@ export enum ActionType {
   SELECT = "SELECT_FOLDER",
   REMOVE_SELECTED = "REMOVE_SELECTED",
 }
-
-const randomColor = getRandomColor();
-console.log("random color", randomColor);
 
 const { ADD, REMOVE, UPDATE, SELECT, REMOVE_SELECTED } = ActionType;
 

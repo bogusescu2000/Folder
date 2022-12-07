@@ -7,7 +7,6 @@ import { FolderDialog } from "../FolderDialog";
 import { ConfirmationDialog } from "../ConfirmationDialog";
 import { FolderButton } from "../Button";
 import { useDialog } from "../../hooks/useDialog";
-import { useConfirmationDialog } from "../../hooks/useConfirmationDialog";
 
 import "../../styles/createFolder.scss";
 import { useFoldersContext } from "./FolderProvider";
@@ -20,8 +19,11 @@ export const CreateFolder = () => {
   } = useFoldersContext();
 
   const { handleOpenClick, handleCloseClick, open } = useDialog();
-  const { handleDialogOpenClick, handleDialogCloseClick, openDialog } =
-    useConfirmationDialog();
+  const {
+    handleOpenClick: handleDialogOpenClick,
+    handleCloseClick: handleDialogCloseClick,
+    open: openDialog,
+  } = useDialog();
 
   const selectedFolders = folders.filter((folder) => folder.isChecked === true);
 
@@ -40,7 +42,10 @@ export const CreateFolder = () => {
               onClick={handleDialogOpenClick}
             />
 
-            <CreateNewFolderOutlinedIcon onClick={handleOpenClick} />
+            <CreateNewFolderOutlinedIcon
+              className="icon-button"
+              onClick={handleOpenClick}
+            />
           </div>
 
           <FolderCatalog />
@@ -48,6 +53,7 @@ export const CreateFolder = () => {
       ) : (
         <div className="create-folder-container">
           <CloudSyncOutlinedIcon
+            className="icon-button"
             sx={{ height: "200px", width: "200px", color: "#5C5CDF" }}
           />
           <h1 className="title-text">You don't have folders created</h1>
